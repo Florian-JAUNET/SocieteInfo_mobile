@@ -4,7 +4,6 @@ import React from "react";
 import HomeScreen from "./src/screen/HomeScreen";
 import InfoScreenName from "./src/screen/InfoScreenName";
 import InfoScreenSiret from "./src/screen/InfoScreenSiret";
-import LoginScreen from "./src/screen/LoginScreen";
 import ResearchAdresseScreen from "./src/screen/ResearchAdresseScreen";
 import ResearchNameScreen from "./src/screen/ResearchNameScreen";
 import ResearchSiretScreen from "./src/screen/ResearchSiretScreen";
@@ -24,11 +23,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="Login"
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
         <Stack.Screen
           name="Home"
           component={HomeScreen}

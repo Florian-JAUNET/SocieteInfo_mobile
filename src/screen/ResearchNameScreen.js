@@ -101,11 +101,14 @@ export default function ResearchNameScreen() {
       />
       {isLoading ? (
         <Text>Chargement en cours...</Text>
-      ) : dataEtablissement.data.results &&
-        dataEntreprise.data.results &&
+      ) : dataEntreprise &&
+        dataEntreprise.data &&
         dataEntreprise.data.results.length > 0 ? (
         dataEntreprise.data.results.map((result, index) => {
-          const dataEtablissementResult = dataEtablissement.data.results[index];
+          const dataEtablissementResult =
+            dataEtablissement && dataEtablissement.data
+              ? dataEtablissement.data.results[index]
+              : null;
           return (
             <View
               key={index}

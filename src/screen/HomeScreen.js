@@ -72,9 +72,9 @@ export default function HomeScreen() {
       <TouchableOpacity onPress={goToResearchSiret}>
         <Text style={styles.cardSiret}>Recherche par SIRET</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={goToResearchAdresse}>
+      {/* <TouchableOpacity onPress={goToResearchAdresse}>
         <Text style={styles.cardAdresse}>Recherche par adresse</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <StatusBar style="auto" />
     </View>
   );

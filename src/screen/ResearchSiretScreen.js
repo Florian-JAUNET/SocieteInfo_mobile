@@ -64,9 +64,9 @@ export default function ResearchSiretScreen() {
     })
       .then((response) => response.json())
       .then((data) => {
+        // console.log(JSON.stringify(data, null, 2));
         setData(data);
         setIsLoading(false);
-        // console.log(JSON.stringify(data, null, 2));
       })
       .catch((error) => console.error(error));
   };
@@ -86,7 +86,9 @@ export default function ResearchSiretScreen() {
         data.data.etablissements && data.data.etablissements[0] ? (
           <View
             style={styles.card}
-            onTouchEndCapture={() => navigation.navigate("Info", { data })}
+            onTouchEndCapture={() =>
+              navigation.navigate("InfoSiret", { siret })
+            }
           >
             <Text style={styles.cardTitle}>
               {data.data.etablissements[0].deno}

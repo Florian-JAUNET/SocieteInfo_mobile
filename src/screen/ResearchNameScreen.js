@@ -114,7 +114,7 @@ export default function ResearchNameScreen() {
               key={index}
               style={styles.card}
               onTouchEndCapture={() =>
-                navigation.navigate("Info", { entreprise })
+                navigation.navigate("InfoName", { entreprise })
               }
             >
               <Text style={styles.cardTitle}>{result.nomcommercial}</Text>

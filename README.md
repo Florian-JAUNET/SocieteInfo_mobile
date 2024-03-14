@@ -5,3 +5,7 @@ Cette application a pour but de se passer de toutes les contraintes que l'on peu
 ## Installation sur mobile
 
 Android :
+
+### Vidéo
+
+Youtube : https://youtube.com/shorts/Q6Q-2f9MTaM?si=CEyPBTTJDc-vqbc2

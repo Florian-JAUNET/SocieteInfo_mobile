@@ -2,7 +2,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
 import HomeScreen from "./src/screen/HomeScreen";
-import InfoScreen from "./src/screen/InfoScreen";
+import InfoScreenName from "./src/screen/InfoScreenName";
+import InfoScreenSiret from "./src/screen/InfoScreenSiret";
 import LoginScreen from "./src/screen/LoginScreen";
 import ResearchAdresseScreen from "./src/screen/ResearchAdresseScreen";
 import ResearchNameScreen from "./src/screen/ResearchNameScreen";
@@ -58,8 +59,16 @@ export default function App() {
           }}
         />
         <Stack.Screen
-          name="Info"
-          component={InfoScreen}
+          name="InfoName"
+          component={InfoScreenName}
+          options={{
+            title: "Informations",
+            headerTitleStyle: { fontSize: 18 },
+          }}
+        />
+        <Stack.Screen
+          name="InfoSiret"
+          component={InfoScreenSiret}
           options={{
             title: "Informations",
             headerTitleStyle: { fontSize: 18 },
